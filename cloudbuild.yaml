@@ -1,5 +1,3 @@
 steps:
-- name: 'ubuntu'
-  args: ['ls', '-la']
 - name: "docker"
-  args: ['ps']
+  args: ['run', '--rm', '--mount', 'type=bind,source=$(PWD),target=/scan','registry.fortidevsec.forticloud.com/fdevsec_dast:latest']
