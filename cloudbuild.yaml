@@ -3,4 +3,4 @@ steps:
     entrypoint: bash
     args: 
       - -c
-	    -  docker run busybox echo 'Hello Dileep"
+      -  docker run busybox echo 'Hello Dileep"
