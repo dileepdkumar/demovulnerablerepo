@@ -1,6 +1,6 @@
 steps:
 - name: "gcr.io/cloud-builders/docker"
-    args: 
+  args: 
     - run
     - --mount type=bind,source=$(PWD),target=/scan
     - registry.fortidevsec.forticloud.com/fdevsec_dast:latest
