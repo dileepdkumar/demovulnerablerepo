@@ -1,4 +1,4 @@
 steps:
 - name: 'docker'
   entrypoint: 'sh'
-  args: ['-c','docker run --rm --mount type=bind,source="$PWD",target=/scan registry.fortidevsec.forticloud.com/fdevsec_dast:latest']
+  args: ['-c','docker run --rm --mount type=bind,source="$(PWD)",target=/scan registry.fortidevsec.forticloud.com/fdevsec_dast:latest']
