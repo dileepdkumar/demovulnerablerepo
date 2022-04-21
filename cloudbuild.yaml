@@ -1,7 +1,7 @@
 steps:
-- name: 'alpine'
+- name: 'ubuntu'
   args: ['ls', '-la']
-- name: "gcr.io/cloud-builders/docker"
+- name: "docker"
   args: 
     - run
     - --mount type=bind,source=$(PWD),target=/scan
