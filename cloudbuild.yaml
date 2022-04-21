@@ -1,4 +1,4 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['run', '--rm', '--mount', 'type=bind,source="$PWD",target=/scan','registry.fortidevsec.forticloud.com/fdevsec_dast:latest']
+  args: ['run', '--rm', '--mount', 'type=bind,source=$PWD,target=/scan','registry.fortidevsec.forticloud.com/fdevsec_dast:latest']
   wait_for: ['latest']
