@@ -1,5 +1,5 @@
 steps:
 - name: 'bash'
-  args: ['echo', $(PWD)]
+  args: ['echo', $PWD]
 #- name: 'bash'
 #  args: [docker','run', '--rm', '--mount', 'type=bind,source=$(PWD),target=/scan','registry.fortidevsec.forticloud.com/fdevsec_dast:latest']
