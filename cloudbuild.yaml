@@ -6,7 +6,7 @@ steps:
     - |
       # Read from "/workspace"
       echo "Running FortiDevSec SAST scanner..."
-      echo "PWD... $PWD"
+      echo $PWD
       apt-get install docker-ce
       docker run busybox echo "Hello Dileep"
       #gcr.io/cloud-builders/docker
