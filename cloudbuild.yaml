@@ -1,5 +1,4 @@
 steps:
-- id: "Read Values"
   name: gcr.io/cloud-builders/docker
   entrypoint: bash
   args:
