@@ -1,5 +1,3 @@
 steps:
 - name: 'bash'
-  args: ['myscript.bash']
-#- name: 'bash'
-#  args: [docker','run', '--rm', '--mount', 'type=bind,source=$(PWD),target=/scan','registry.fortidevsec.forticloud.com/fdevsec_dast:latest']
+  args: [docker','run', '--rm', '--mount', 'type=bind,source=$(PWD),target=/scan','registry.fortidevsec.forticloud.com/fdevsec_dast:latest']
