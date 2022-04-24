@@ -7,4 +7,4 @@ steps:
     - |
       # Read from "/workspace"
       echo "Running FortiDevSec SAST scanner..."
-      docker run --rm --mount type=bind,source=$PWD,target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest
+      docker run --rm --mount type=bind,source=$(PWD),target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest
