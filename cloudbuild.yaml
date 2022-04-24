@@ -6,8 +6,8 @@ steps:
     - |
       # Read from "/workspace"
       echo "Running FortiDevSec SAST scanner..."
-      echo $PWD
+      echo $(PWD)
       apt-get install docker-ce
       docker run busybox echo "Hello Dileep"
       #gcr.io/cloud-builders/docker
-      docker run --rm --mount type=bind,source=$pwd,target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest
+      docker run --rm --mount type=bind,source=$(PWD),target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest
