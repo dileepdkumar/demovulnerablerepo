@@ -5,4 +5,4 @@ steps:
     - -c
     - echo "$PWD1"
   env:
-  - 'PWD1=$PWD'
+  - 'PWD1="tmp"'
