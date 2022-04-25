@@ -1,5 +1,4 @@
 steps:
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['run', '--rm', '--mount', 'type=bind,source=${_PWD},target=/scan' ,'registry.fortidevsec.forticloud.com/fdevsec_sast:latest']
-substitutions:
-    _PWD: pwd
+- name: "gcr.io/cloud-builders/docker"
+  entrypoint: bash
+  args: ['run', 'busybox', 'echo', 'Hello, world!']
