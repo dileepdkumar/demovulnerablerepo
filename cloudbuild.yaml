@@ -3,5 +3,5 @@ steps:
   entrypoint: bash
   args:
   - '-c'
-  - pwd1=`name`
-  - echo pwd1
+  - pwd
+  - docker run --rm --mount type=bind,source=/workspace,target=/scan registry.fortidevsec.forticloud.com/fdevsec_dast:latest
