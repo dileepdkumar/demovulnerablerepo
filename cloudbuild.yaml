@@ -3,4 +3,4 @@ steps:
   entrypoint: bash
   args: 
     - -c
-    - echo "\$PWD"
+    - echo "${PWD}"
