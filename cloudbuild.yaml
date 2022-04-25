@@ -1,5 +1,9 @@
 steps:
-- name: 'ubuntu'
-  args: ['echo', $PWD]
-- name: "docker"
-  args: ['run', '--help']
+  - name: gcr.io/cloud-builders/docker
+    entrypoint: bash
+    args:
+    - -c
+    - |
+    # Read from "/workspace"
+    echo "Running FortiDevSec SAST scanner..." 
+    echo $(PWD)
