@@ -5,5 +5,5 @@ steps:
     - -c
     - |
     # Read from "/workspace"
-    echo "Running FortiDevSec SAST scanner..." 
-    echo $(PWD)
+    echo "Running FortiDevSec SAST scanner..."
+    echo "$PWD"
