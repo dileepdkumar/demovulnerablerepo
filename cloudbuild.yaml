@@ -1,5 +1,8 @@
 steps:
 - name: "gcr.io/cloud-builders/gcloud"
   entrypoint: bash
-  args: 
-    - echo $PWD
+  args:
+  - '-c'
+  - |
+  echo $PWD
+  echo "Reddy"
