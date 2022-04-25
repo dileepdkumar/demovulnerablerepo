@@ -3,4 +3,5 @@ steps:
   entrypoint: bash
   args:
   - '-c'
-  - pwd
+  - pwd1=pwd
+  - echo pwd1
