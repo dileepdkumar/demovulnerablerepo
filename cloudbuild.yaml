@@ -1,5 +1,5 @@
 steps:
-  - name: gcr.io/cloud-builders/docker
+  - name: ubuntu
     entrypoint: bash
     args:
     - -c
@@ -10,4 +10,4 @@ steps:
       apt-get install docker-ce
       docker run busybox echo "Hello Dileep"
       #gcr.io/cloud-builders/docker
-      docker run --rm --mount type=bind,source=$(PWD),target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest
+      docker run --rm --mount type=bind,source=.,target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest
