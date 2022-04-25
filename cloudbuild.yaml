@@ -3,4 +3,5 @@ steps:
     entrypoint: bash
     args: 
       - -c
+      - |
       echo "Hi Dileep"
