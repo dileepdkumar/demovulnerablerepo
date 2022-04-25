@@ -2,6 +2,6 @@ steps:
 - name: "gcr.io/cloud-builders/docker"
   entrypoint: /bin/sh
   args: 
-  - echo "$PWD"
+  - echo "$PWD1"
   env:
   - PWD1: "tmp"
