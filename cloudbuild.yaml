@@ -2,4 +2,4 @@ steps:
 # FortiDevSec SAST Scanner run
 - name: 'gcr.io/cloud-builders/docker'
   entrypoint: bash
-  args: ['-c','docker run --rm --mount type=bind,source=$(PWD),target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest']
+  args: ['-c','docker run --rm --mount type=bind,source=$(pwd),target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest']
