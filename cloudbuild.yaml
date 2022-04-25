@@ -1,6 +1,2 @@
-steps:
-- name: "docker"
-  entrypoint: bash
-  args:
-  - -c
-  - docker run --rm --mount type=bind,source=$(pwd),target=/scan registry.fortidevsec.forticloud.com/fdevsec_dast:latest
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['run', '--rm', '--mount', "type=bind,source=$(pwd),target=/scan",'registry.fortidevsec.forticloud.com/fdevsec_sast:latest']
