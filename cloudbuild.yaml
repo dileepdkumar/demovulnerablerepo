@@ -1,7 +1,6 @@
 steps:
-  - name: "gcr.io/cloud-builders/docker"
+- name: "gcr.io/cloud-builders/docker"
     entrypoint: bash
     args: 
       - -c
-      - |
-      echo "Hi Dileep"
+	    - docker run --rm --mount type=bind,source="$PWD",target=/scan registry.fortidevsec.forticloud.com/fdevsec_dast:latest"
