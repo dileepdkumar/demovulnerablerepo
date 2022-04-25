@@ -6,4 +6,3 @@ steps:
       - |
       # Read from "/workspace"
       echo "Running FortiDevSec SAST scanner..."
-      echo "$PWD"
