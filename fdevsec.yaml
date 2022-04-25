@@ -2,7 +2,7 @@ version: v1
 
 id:
  org: 15a29fea-ebaf-4187-94a3-bccca055e2dd
- app: 361f2b38-9ab4-45f6-8faf-04684f289e1c
+ app: 4e014e0c-e70a-4571-9eea-842935cb65ca
 
 # Optional parameters.
 scanners:
