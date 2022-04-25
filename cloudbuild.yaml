@@ -3,6 +3,6 @@ steps:
   entrypoint: bash
   args: 
     - -c
-    - echo "$PWD"
+    - echo "$PWD1"
   env:
-  - 'PWD=$PWD'
+  - 'PWD1=$PWD'
